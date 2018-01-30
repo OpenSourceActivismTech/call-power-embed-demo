@@ -1,0 +1,58 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="styles/page.css" />
+</head>
+
+<body>
+
+<div class="container">
+	<h1>Campaign Headline</h1>
+
+	<p>Introductory text. Vim ex consul putent, vim volumus commune propriae an, cu eum commodo theophrastus. Cu vim delicata argumentum, qui ei rebum atomorum repudiandae. Ei dolore recteque sapientem nec, an volutpat interpretaris mediocritatem quo. Eligendi menandri cum ea.</p>
+
+	<p>Sadipscing omittantur ad eos. Duo tacimates torquatos cu, invidunt posidonium percipitur est et. In sea animal probatus atomorum, in probatus expetenda comprehensam vim, dicam soleat voluptua an vis. Audire adversarium eam ei. Ad munere feugait prodesset vis. Ea sed epicuri iudicabit.</p>
+
+	<h2>Call to Action</h2>
+
+	<div class="row">
+		<form id="embedForm" class="form-horizontal">
+			<div class="form-group">
+				<label class="control-label col-sm-2">Phone</label>
+				<div class="col-sm-4">
+					<input id="phone" type="tel" class="form-control "/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2">Zip</label>
+				<div class="col-sm-2">
+					<input id="zipcode" class="form-control"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-2 col-sm-offset-2">
+					<button class="btn btn-success" id="submit" type="submit">Call Me</button>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript">
+			window.CallPowerOptions = {
+				form: '#embedForm',
+				phoneField: '#phone',
+				locationField: '#zipcode',
+				scriptDisplay: 'overlay',
+				overlayCloseText: 'Click here to continue'
+			};
+		</script>
+		<script src="https://demo.callpower.org/api/campaign/1/embed.js"></script>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container full-width">
+        <p class="text-muted">CallPower Embed.js Demo</p>
+	</div>
+</footer>
+
+</body>
+</html>
